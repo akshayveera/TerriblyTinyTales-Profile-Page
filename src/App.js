@@ -1,9 +1,9 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client"
-import Header from "./Header";
-import Profile from "./Profile";
-import Posts from "./Posts";
+import Header from "./components/Header";
+import Profile from "./components/Profile";
+import Posts from "./components/Posts";
 
 const App = ()=>{
     return (
@@ -15,4 +15,6 @@ const App = ()=>{
     )
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<App/>);
