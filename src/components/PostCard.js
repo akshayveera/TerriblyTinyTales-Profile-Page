@@ -9,17 +9,17 @@ const PostCard = ({info}) => {
     const {title, text, subText,type, author, date, duration, views, key} = info;
     
   return (
-    <div className='flex flex-col gap-5 border-b-2 pt-14 px-8 pb-10'>
+    <div className='flex flex-col gap-5 border-b-2 pt-10 px-6 pb-6'>
         <div className='flex justify-between'>
-          <div className='font-bold text-xl'>{title}</div>
+          <div className='font-bold text-lg'>{title}</div>
           <Logo imgSrc={like} altText={"likes"} style={"bg-yellow-500 h-5"}/>
         </div>
         <div>
-            <div className='pb-2'>{text}</div>        
+            <div className='pb-2 text-sm'>{text}</div>        
             {subText[0] === "" ? "" : ( 
               <>
                 {subText.map((item, idx)=>{
-                    return (<div className='' key={idx}>{"- "+ item}</div>)
+                    return (<div className='text-sm' key={idx}>{"- "+ item}</div>)
                 })}
               </>             
             )}

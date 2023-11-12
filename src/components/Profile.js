@@ -16,11 +16,11 @@ import { profileInfo } from '../constants'
 const Profile = () => {
   const {name,followers, following, bio, link, favs, likes, views, hearts} = profileInfo;
   return (
-    <div className='mb-3'>
-        <img className='h-44 w-full object-cover object-center' src={cover} alt="cover photo" />
+    <div className=''>
+        <img className='h-40 w-full object-cover object-center' src={cover} alt="cover photo" />
 
         <div className='flex flex-col mx-8 mt-2'>
-          <div className='flex gap-4'>
+          <div className='flex gap-4 '>
             <img className='rounded-full border-2 border-white w-24 relative -top-12' src={profilePicture} alt="" />
             
             <div className='flex flex-col gap-2'>
@@ -34,17 +34,17 @@ const Profile = () => {
               <div className='flex gap-3'>
                 <div className=''>
                   <div className=' font-bold text-gray-400 border border-gray-400 py-0.5 px-3 text-center rounded-lg text-sm'>{followers}</div>
-                  <div className='w-full text-center text-gray-400 text-[0.6rem] font-bold'>Followers</div>
+                  <div className='w-full text-center text-gray-400 text-[0.6rem] font-semibold'>Followers</div>
                 </div>
                 <div className=''>
                   <div className='font-bold text-gray-400 border border-gray-400 py-0.5 px-4 text-center rounded-lg text-sm'>{following}</div>
-                  <div className='w-full text-center text-gray-400 text-[0.6rem] font-bold'>Following</div>
+                  <div className='w-full text-center text-gray-400 text-[0.6rem] font-semibold'>Following</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className='flex flex-col gap-2'>
+          <div className='flex flex-col gap-1'>
             <div className='text-[0.95rem] flex flex-col gap-1'>
               {bio}
               <a className='text-blue-500 text-[0.85rem]' target='_blank' href={link}>{link}</a>
