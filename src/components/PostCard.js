@@ -9,28 +9,28 @@ const PostCard = ({info}) => {
     const {title, text, subText,type, author, date, duration, views, key} = info;
     
   return (
-    <div className='flex flex-col gap-5 border-b-2 pt-10 px-6 pb-6'>
+    <div className='flex flex-col gap-5 border-b-2 pt-10 px-6 pb-6 sm:px-16'>
         <div className='flex justify-between'>
-          <div className='font-bold text-lg'>{title}</div>
-          <Logo imgSrc={like} altText={"likes"} style={"bg-yellow-500 h-5"}/>
+          <div className='font-bold sm:text-lg md:text-2xl'>{title}</div>
+          <Logo imgSrc={like} altText={"likes"} style={"bg-yellow-500 h-5 md:h-6 "}/>
         </div>
         <div>
-            <div className='pb-2 text-sm'>{text}</div>        
+            <div className='pb-2 text-sm md:text-lg'>{text}</div>        
             {subText[0] === "" ? "" : ( 
               <>
                 {subText.map((item, idx)=>{
-                    return (<div className='text-sm' key={idx}>{"- "+ item}</div>)
+                    return (<div className='text-sm md:text-lg' key={idx}>{"- "+ item}</div>)
                 })}
               </>             
             )}
         </div>
         <div className='flex justify-between'>
-          <div className='font-bold text-gray-500 text-[0.65rem]'>
-            <span className='font-bold text-blue-500 text-[0.65rem]'>{type + " "}</span> 
+          <div className='font-bold text-gray-500 text-[0.65rem] md:text-base'>
+            <span className='font-bold text-blue-500 text-[0.65rem] md:text-base'>{type + " "}</span> 
             by 
-            <span className='font-bold text-gray-500 text-[0.65rem]'>{" " + author}</span>
+            <span className='font-bold text-gray-500 text-[0.65rem] md:text-base'>{" " + author}</span>
           </div>
-          <div className='text-gray-400 text-[0.65rem]'>
+          <div className='text-gray-400 text-[0.65rem] md:text-base'>
             {date + " · " + duration + " · " + views} 
           </div>
         </div>
