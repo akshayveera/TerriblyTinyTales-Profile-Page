@@ -7,10 +7,10 @@ import Posts from "./components/Posts";
 
 const App = ()=>{
     return (
-        <div className="mb-20">
+        <div className="">
             <Header/>
             <Profile/>
-            {/* <Posts/> */}
+            <Posts/>
         </div>
     )
 }
