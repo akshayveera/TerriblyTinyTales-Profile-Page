@@ -7,7 +7,7 @@ import Posts from "./components/Posts";
 
 const App = ()=>{
     return (
-        <div className="">
+        <div>
             <Header/>
             <Profile/>
             <Posts/>

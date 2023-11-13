@@ -9,7 +9,12 @@ const PostCard = ({info}) => {
     const {title, text, subText,type, author, date, duration, views, key} = info;
     
   return (
-    <div className='flex flex-col gap-5 border-b-2 pt-10 px-6 pb-6 sm:px-16'>
+    <div 
+    className='flex flex-col gap-5 border-b-2 pt-10 px-6 pb-6 
+    sm:px-16 
+    md:px-28 md:pt-14 md:pb-10 
+    lg:px-40 lg:pt-20 lg:pb-14'>
+      
         <div className='flex justify-between'>
           <div className='font-bold sm:text-lg md:text-2xl'>{title}</div>
           <Logo imgSrc={like} altText={"likes"} style={"bg-yellow-500 h-5 md:h-6 "}/>

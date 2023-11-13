@@ -2,7 +2,7 @@
 import React from 'react'
 
 const Logo = ({imgSrc, altText, style })=>{
-    return <img className={"rounded-full p-[2px] "+style} src={imgSrc} alt={altText}/>
+    return <img className={"rounded-full"+style} src={imgSrc} alt={altText}/>
 }
 
 export default Logo
