@@ -14,7 +14,7 @@ const Header = () => {
     lg:py-6'>
 
         <div 
-        className='flex items-center text-white gap-2 
+        className='flex items-center text-white gap-2 px-3.5
         md:gap-5'>
 
           <img 
@@ -26,6 +26,7 @@ const Header = () => {
           pl-2 py-1 text-[0.7rem] 
           md:text-lg md:pl-5 md:py-2 md:border-l-2' >S T O R I E S</span>          
         </div>
+
         <div>
           <button 
           className='font-bold bg-yellow-500 

@@ -5,7 +5,7 @@ import { postCardInfo } from '../constants'
 
 const Posts = () => {
     const info = postCardInfo.data;
-    console.log(info);
+    
   return (
     <div className='mt-10'>
         <div className='flex'>
